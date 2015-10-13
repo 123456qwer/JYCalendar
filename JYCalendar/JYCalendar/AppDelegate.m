@@ -7,8 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "JYMainViewController.h"
+
 
 @interface AppDelegate ()
+
+{
+  
+    JYMainViewController *_jyMainVC;
+
+}
 
 @end
 
@@ -16,7 +24,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    _window.backgroundColor = [UIColor whiteColor];
+    [_window makeKeyAndVisible];
+    
+    _jyMainVC = [[JYMainViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:_jyMainVC];
+    
+    _window.rootViewController = nav;
+    
+
     return YES;
 }
 

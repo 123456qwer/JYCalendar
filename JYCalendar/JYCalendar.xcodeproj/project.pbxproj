@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43414B561BCC944B00D343BB /* JYWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43414B551BCC944B00D343BB /* JYWeatherView.m */; };
+		436344181BCB4A3F00867E1B /* JYMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 436344171BCB4A3F00867E1B /* JYMainViewController.m */; };
+		4363441D1BCB4C3C00867E1B /* JYCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4363441C1BCB4C3C00867E1B /* JYCalendarView.m */; };
+		436344201BCB4D9500867E1B /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4363441F1BCB4D9500867E1B /* UIViewExt.m */; };
+		436344241BCB955800867E1B /* LunarCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 436344231BCB955800867E1B /* LunarCalendar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		43C8888D1BC8AFA600B6BD6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C8888C1BC8AFA600B6BD6B /* main.m */; };
 		43C888901BC8AFA600B6BD6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C8888F1BC8AFA600B6BD6B /* AppDelegate.m */; };
-		43C888931BC8AFA600B6BD6B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C888921BC8AFA600B6BD6B /* ViewController.m */; };
-		43C888961BC8AFA600B6BD6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C888941BC8AFA600B6BD6B /* Main.storyboard */; };
 		43C888981BC8AFA600B6BD6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43C888971BC8AFA600B6BD6B /* Images.xcassets */; };
 		43C8889B1BC8AFA600B6BD6B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43C888991BC8AFA600B6BD6B /* LaunchScreen.xib */; };
 		43C888A71BC8AFA600B6BD6B /* JYCalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C888A61BC8AFA600B6BD6B /* JYCalendarTests.m */; };
+		43C888BE1BC8E48D00B6BD6B /* JYRemindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C888BD1BC8E48D00B6BD6B /* JYRemindViewController.m */; };
+		43C888C21BC8F0FD00B6BD6B /* JYSetUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C888C11BC8F0FD00B6BD6B /* JYSetUpViewController.m */; };
+		43C888C61BC9032300B6BD6B /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C888C51BC9032300B6BD6B /* Tool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +33,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43414B541BCC944B00D343BB /* JYWeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYWeatherView.h; sourceTree = "<group>"; };
+		43414B551BCC944B00D343BB /* JYWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYWeatherView.m; sourceTree = "<group>"; };
+		436344161BCB4A3F00867E1B /* JYMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYMainViewController.h; sourceTree = "<group>"; };
+		436344171BCB4A3F00867E1B /* JYMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYMainViewController.m; sourceTree = "<group>"; };
+		4363441B1BCB4C3C00867E1B /* JYCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYCalendarView.h; sourceTree = "<group>"; };
+		4363441C1BCB4C3C00867E1B /* JYCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYCalendarView.m; sourceTree = "<group>"; };
+		4363441E1BCB4D9500867E1B /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		4363441F1BCB4D9500867E1B /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		436344211BCB4FD700867E1B /* Tags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tags.h; sourceTree = "<group>"; };
+		436344221BCB955800867E1B /* LunarCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LunarCalendar.h; sourceTree = "<group>"; };
+		436344231BCB955800867E1B /* LunarCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LunarCalendar.m; sourceTree = "<group>"; };
 		43C888871BC8AFA600B6BD6B /* JYCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C8888B1BC8AFA600B6BD6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43C8888C1BC8AFA600B6BD6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		43C8888E1BC8AFA600B6BD6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		43C8888F1BC8AFA600B6BD6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		43C888911BC8AFA600B6BD6B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		43C888921BC8AFA600B6BD6B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		43C888951BC8AFA600B6BD6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43C888971BC8AFA600B6BD6B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		43C8889A1BC8AFA600B6BD6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		43C888A01BC8AFA600B6BD6B /* JYCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JYCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C888A51BC8AFA600B6BD6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43C888A61BC8AFA600B6BD6B /* JYCalendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYCalendarTests.m; sourceTree = "<group>"; };
+		43C888B01BC8B22800B6BD6B /* JYCalendarPCH.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYCalendarPCH.pch; sourceTree = "<group>"; };
+		43C888BC1BC8E48D00B6BD6B /* JYRemindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYRemindViewController.h; sourceTree = "<group>"; };
+		43C888BD1BC8E48D00B6BD6B /* JYRemindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYRemindViewController.m; sourceTree = "<group>"; };
+		43C888C01BC8F0FD00B6BD6B /* JYSetUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYSetUpViewController.h; sourceTree = "<group>"; };
+		43C888C11BC8F0FD00B6BD6B /* JYSetUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYSetUpViewController.m; sourceTree = "<group>"; };
+		43C888C41BC9032300B6BD6B /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
+		43C888C51BC9032300B6BD6B /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
+		43C888C71BC9039B00B6BD6B /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		43C888C81BC9068D00B6BD6B /* WidthOrHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidthOrHeight.h; sourceTree = "<group>"; };
+		43C888C91BC906C200B6BD6B /* Logs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logs.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +84,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		436344151BCB4A2500867E1B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				436344161BCB4A3F00867E1B /* JYMainViewController.h */,
+				436344171BCB4A3F00867E1B /* JYMainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		436344191BCB4A6800867E1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4363441A1BCB4A7500867E1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4363441B1BCB4C3C00867E1B /* JYCalendarView.h */,
+				4363441C1BCB4C3C00867E1B /* JYCalendarView.m */,
+				43414B541BCC944B00D343BB /* JYWeatherView.h */,
+				43414B551BCC944B00D343BB /* JYWeatherView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		43C8887E1BC8AFA600B6BD6B = {
 			isa = PBXGroup;
 			children = (
@@ -83,9 +134,9 @@
 			children = (
 				43C8888E1BC8AFA600B6BD6B /* AppDelegate.h */,
 				43C8888F1BC8AFA600B6BD6B /* AppDelegate.m */,
-				43C888911BC8AFA600B6BD6B /* ViewController.h */,
-				43C888921BC8AFA600B6BD6B /* ViewController.m */,
-				43C888941BC8AFA600B6BD6B /* Main.storyboard */,
+				43C888BF1BC8F0ED00B6BD6B /* SetUp */,
+				43C888BB1BC8E47300B6BD6B /* Remind */,
+				43C888B71BC8E43000B6BD6B /* Calendar */,
 				43C888971BC8AFA600B6BD6B /* Images.xcassets */,
 				43C888991BC8AFA600B6BD6B /* LaunchScreen.xib */,
 				43C8888A1BC8AFA600B6BD6B /* Supporting Files */,
@@ -96,8 +147,14 @@
 		43C8888A1BC8AFA600B6BD6B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				43C888C31BC9030B00B6BD6B /* Tool */,
 				43C8888B1BC8AFA600B6BD6B /* Info.plist */,
 				43C8888C1BC8AFA600B6BD6B /* main.m */,
+				43C888B01BC8B22800B6BD6B /* JYCalendarPCH.pch */,
+				43C888C71BC9039B00B6BD6B /* Header.h */,
+				43C888C81BC9068D00B6BD6B /* WidthOrHeight.h */,
+				43C888C91BC906C200B6BD6B /* Logs.h */,
+				436344211BCB4FD700867E1B /* Tags.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +174,47 @@
 				43C888A51BC8AFA600B6BD6B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43C888B71BC8E43000B6BD6B /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				4363441A1BCB4A7500867E1B /* View */,
+				436344191BCB4A6800867E1B /* Model */,
+				436344151BCB4A2500867E1B /* Controller */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		43C888BB1BC8E47300B6BD6B /* Remind */ = {
+			isa = PBXGroup;
+			children = (
+				43C888BC1BC8E48D00B6BD6B /* JYRemindViewController.h */,
+				43C888BD1BC8E48D00B6BD6B /* JYRemindViewController.m */,
+			);
+			path = Remind;
+			sourceTree = "<group>";
+		};
+		43C888BF1BC8F0ED00B6BD6B /* SetUp */ = {
+			isa = PBXGroup;
+			children = (
+				43C888C01BC8F0FD00B6BD6B /* JYSetUpViewController.h */,
+				43C888C11BC8F0FD00B6BD6B /* JYSetUpViewController.m */,
+			);
+			path = SetUp;
+			sourceTree = "<group>";
+		};
+		43C888C31BC9030B00B6BD6B /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				436344221BCB955800867E1B /* LunarCalendar.h */,
+				436344231BCB955800867E1B /* LunarCalendar.m */,
+				4363441E1BCB4D9500867E1B /* UIViewExt.h */,
+				4363441F1BCB4D9500867E1B /* UIViewExt.m */,
+				43C888C41BC9032300B6BD6B /* Tool.h */,
+				43C888C51BC9032300B6BD6B /* Tool.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +297,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43C888961BC8AFA600B6BD6B /* Main.storyboard in Resources */,
 				43C8889B1BC8AFA600B6BD6B /* LaunchScreen.xib in Resources */,
 				43C888981BC8AFA600B6BD6B /* Images.xcassets in Resources */,
 			);
@@ -219,8 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43C888931BC8AFA600B6BD6B /* ViewController.m in Sources */,
+				436344241BCB955800867E1B /* LunarCalendar.m in Sources */,
+				436344201BCB4D9500867E1B /* UIViewExt.m in Sources */,
+				436344181BCB4A3F00867E1B /* JYMainViewController.m in Sources */,
+				43C888C21BC8F0FD00B6BD6B /* JYSetUpViewController.m in Sources */,
+				43C888BE1BC8E48D00B6BD6B /* JYRemindViewController.m in Sources */,
+				4363441D1BCB4C3C00867E1B /* JYCalendarView.m in Sources */,
+				43C888C61BC9032300B6BD6B /* Tool.m in Sources */,
 				43C888901BC8AFA600B6BD6B /* AppDelegate.m in Sources */,
+				43414B561BCC944B00D343BB /* JYWeatherView.m in Sources */,
 				43C8888D1BC8AFA600B6BD6B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,14 +348,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		43C888941BC8AFA600B6BD6B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				43C888951BC8AFA600B6BD6B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		43C888991BC8AFA600B6BD6B /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -347,6 +443,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JYCalendar/JYCalendarPCH.pch;
 				INFOPLIST_FILE = JYCalendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +455,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JYCalendar/JYCalendarPCH.pch;
 				INFOPLIST_FILE = JYCalendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +516,7 @@
 				43C888AC1BC8AFA600B6BD6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43C888AD1BC8AFA600B6BD6B /* Build configuration list for PBXNativeTarget "JYCalendarTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +525,7 @@
 				43C888AF1BC8AFA600B6BD6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JYSetUpViewController.h
 //  JYCalendar
 //
 //  Created by 吴冬 on 15/10/10.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface JYSetUpViewController : UIViewController
 
++ (instancetype)shareSetUp;
 
 @end
-

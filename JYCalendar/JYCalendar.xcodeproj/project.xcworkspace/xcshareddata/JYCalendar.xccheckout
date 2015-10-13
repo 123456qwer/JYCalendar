@@ -7,34 +7,34 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>EDD37B69-F461-4962-AB32-2276A98FFAA3</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>JYCalendar</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>8F6029DD5ACB82CA71755ED0085E21A325C0A4C3</key>
-		<string>https://github.com/123456qwer/gitSkills.git</string>
+		<key>6F3185F4425587F54261497A99ED7033C997B44D</key>
+		<string>https://github.com/123456qwer/JYCalendar.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>JYCalendar/JYCalendar.xcodeproj/project.xcworkspace</string>
+	<string>JYCalendar/JYCalendar.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>8F6029DD5ACB82CA71755ED0085E21A325C0A4C3</key>
+		<key>6F3185F4425587F54261497A99ED7033C997B44D</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/123456qwer/gitSkills.git</string>
+	<string>https://github.com/123456qwer/JYCalendar.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>8F6029DD5ACB82CA71755ED0085E21A325C0A4C3</string>
+	<string>6F3185F4425587F54261497A99ED7033C997B44D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>8F6029DD5ACB82CA71755ED0085E21A325C0A4C3</string>
+			<string>6F3185F4425587F54261497A99ED7033C997B44D</string>
 			<key>IDESourceControlWCCName</key>
-			<string>gitSkills</string>
+			<string>JYCalendar</string>
 		</dict>
 	</array>
 </dict>

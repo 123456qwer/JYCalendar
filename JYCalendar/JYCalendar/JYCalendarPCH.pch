@@ -1,0 +1,27 @@
+//
+//  JYCalendarPCH.pch
+//  JYCalendar
+//
+//  Created by 吴冬 on 15/10/10.
+//  Copyright (c) 2015年 玄机天地. All rights reserved.
+//
+
+#ifndef JYCalendar_JYCalendarPCH_pch
+#define JYCalendar_JYCalendarPCH_pch
+
+
+
+//头文件
+#import "Header.h"
+
+//高度适配
+#import "WidthOrHeight.h"
+
+//NSLog
+#import "Logs.h"
+
+//tag
+#import "Tags.h"
+
+
+#endif
