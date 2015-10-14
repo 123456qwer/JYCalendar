@@ -4,19 +4,13 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JYCalendar/Calendar/View/JYCalendarView.m"
-            timestampString = "466392841.885604"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "315"
-            endingLineNumber = "315"
-            landmarkName = "-createCalendarLabelWithMonth:year:"
-            landmarkType = "5">
+            scope = "0"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -25,13 +19,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "JYCalendar/Tool/LunarCalendar.m"
-            timestampString = "466328361.281669"
+            filePath = "JYCalendar/Calendar/View/JYCalendarView.m"
+            timestampString = "466485509.68314"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "-loadWithDate:"
+            startingLineNumber = "520"
+            endingLineNumber = "520"
+            landmarkName = "-actionForClickCalendar:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

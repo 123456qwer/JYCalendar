@@ -93,7 +93,15 @@ struct SolarTerm
 -(int)GregorianDay;//阳历天
 -(int)Weekday;//一周的第几天
 -(NSString *)Constellation;//星座
--(NSString *)getWorldHoliday:(int)aMonth day:(int)aDay;
+
+
+//******************新增加接口************************************************//
+-(NSString *)getWorldHoliday:(int)aMonth day:(int)aDay; //世界节日
+-(NSString *)getWeekHoliday:(int)aYear month:(int)aMonth day:(int)aDay;  //星期节日
+-(NSString *)getChineseHoliday:(int)aMonth day:(int)aDay;   //中国节日
+
+
+
 @end
 
 

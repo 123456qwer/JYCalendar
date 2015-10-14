@@ -7,11 +7,16 @@
 //
 
 #import "JYSetUpViewController.h"
+#import "JYSetView.h"
 
 static JYSetUpViewController *_jySetUpVC = nil;
 
 @interface JYSetUpViewController ()
+{
+   
+    JYSetView *_jySetView;
 
+}
 @end
 
 @implementation JYSetUpViewController
@@ -26,6 +31,7 @@ static JYSetUpViewController *_jySetUpVC = nil;
     }
 
     return _jySetUpVC;
+    
 }
 
 
@@ -38,7 +44,30 @@ static JYSetUpViewController *_jySetUpVC = nil;
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor yellowColor];
+    self.title = @"设置";
+    
+    //创建tableView
+    [self createTabelView];
+    
+    
 }
+
+
+/**
+ *  创建tableView
+ */
+- (void)createTabelView
+{
+   
+    _jySetView = [[JYSetView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) style:UITableViewStylePlain];
+    [self.view addSubview:_jySetView];
+
+    UIView *bgView = [UIView new];
+    bgView.backgroundColor = [UIColor clearColor];
+    
+    [_jySetView setTableFooterView:bgView];
+}
+
 
 /**
  *  内存警告

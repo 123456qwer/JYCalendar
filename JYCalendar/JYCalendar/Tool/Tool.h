@@ -69,5 +69,15 @@
                                           Year:(NSInteger )year
                                          month:(NSInteger )month;
 
+/**
+ *  返回当天日期
+ *
+ *  @param date
+ *
+ *  @return 如13号
+ */
++ (NSString *)actionForNowSingleDay:(NSDate *)date;
+
+
 
 @end

@@ -366,7 +366,7 @@ int LunarCalendarInfo[] = {
     [dict setObject:@"世界旅游日" forKey:@"0927"];
     [dict setObject:@"孔子诞辰" forKey:@"0928"];
     [dict setObject:@"国际翻译日" forKey:@"0930"];
-    [dict setObject:@"国庆节 世界音乐日 国际老人节" forKey:@"1001"];
+    [dict setObject:@"国庆节" forKey:@"1001"];
     [dict setObject:@"国际和平与民主自由斗争日" forKey:@"1002"];
     [dict setObject:@"世界动物日" forKey:@"1004"];
     [dict setObject:@"国际教师节" forKey:@"1005"];

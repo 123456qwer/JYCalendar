@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^calendarAction)(NSString *solarDay , NSString *lunarDay, NSString *holiday , int tagGray , NSString *weekDay);
+
 @interface JYCalendarView : UIView
 
 #pragma mark 加载新视图
@@ -20,5 +22,9 @@
 //横竖线
 - (void)createLine:(NSDate *)date
           andMonth:(int )month;
+
+//传值block
+@property (nonatomic ,copy)calendarAction calendarBlock;
+
 
 @end

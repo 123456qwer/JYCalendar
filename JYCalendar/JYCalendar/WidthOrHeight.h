@@ -19,7 +19,10 @@
 //日历表格高度
 #define kHeightForCalendar kScreenWidth / 7.0
 
-
+//天气视图高度
+#define kHeightForWeather 80
+//与日历间隔
+#define kPageForCalendar 10
 
 
 #endif

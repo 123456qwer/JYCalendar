@@ -23,6 +23,21 @@
 
 }
 
++ (NSString *)actionForNowSingleDay:(NSDate *)date
+{
+
+    if (date == nil) {
+        
+        date = [NSDate date];
+    }
+    
+    NSString *strForNowDate = [NSString stringWithFormat:@"%@",date];
+    NSString *strForDay = [strForNowDate substringWithRange:NSMakeRange(8, 2)];
+    
+    return strForDay;
+   
+}
+
 + (NSString *)actionForNowYear:(NSDate *)date
 {
 

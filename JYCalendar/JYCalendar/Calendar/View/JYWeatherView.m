@@ -18,7 +18,7 @@
     if (self = [super initWithFrame:frame]) {
         
         
-        _solarCalendar = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, 40,50)];
+        _solarCalendar = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, 60,50)];
         _solarCalendar.backgroundColor = [UIColor orangeColor];
         _solarCalendar.text = @"2";
         _solarCalendar.font = [UIFont boldSystemFontOfSize:40];
@@ -29,7 +29,7 @@
         _lunarCalendar = [[UILabel alloc] initWithFrame:CGRectMake(_solarCalendar.right + 5, 5, 100, 25)];
         _lunarCalendar.backgroundColor = [UIColor cyanColor];
         _lunarCalendar.text = @"八月初九";
-        _lunarCalendar.font = [UIFont systemFontOfSize:20];
+        _lunarCalendar.font = [UIFont systemFontOfSize:16];
         _lunarCalendar.textAlignment = NSTextAlignmentLeft;
         [self addSubview:_lunarCalendar];
         
@@ -42,10 +42,11 @@
         [self addSubview:_weekDay];
         
         
-        _holiDay = [[UILabel alloc] initWithFrame:CGRectMake(5, _solarCalendar.bottom + 5, 100, 20)];
+        _holiDay = [[UILabel alloc] initWithFrame:CGRectMake(5, _solarCalendar.bottom + 5, kScreenWidth, 20)];
         _holiDay.backgroundColor = [UIColor orangeColor];
         _holiDay.text = @"赚钱节";
-        _holiDay.font = [UIFont boldSystemFontOfSize:15];
+        _holiDay.font = [UIFont boldSystemFontOfSize:10];
+        _holiDay.numberOfLines = 0;
         _holiDay.textAlignment = NSTextAlignmentLeft;
         [self addSubview:_holiDay];
         
@@ -53,7 +54,7 @@
         _pointDay = [[UILabel alloc] initWithFrame:CGRectMake(kScreenWidth / 2.0 - 100 / 2.0, 0, 100, 40)];
         _pointDay.backgroundColor = [UIColor orangeColor];
         _pointDay.text = @"春分";
-        _pointDay.font = [UIFont boldSystemFontOfSize:30];
+        _pointDay.font = [UIFont boldSystemFontOfSize:20];
         _pointDay.textAlignment = NSTextAlignmentCenter;
         [self addSubview:_pointDay];
         
