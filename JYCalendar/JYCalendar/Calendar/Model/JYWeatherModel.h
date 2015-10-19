@@ -10,4 +10,18 @@
 
 @interface JYWeatherModel : NSObject
 
+@property (nonatomic ,copy)NSString *cityStr;
+
+
+@property (nonatomic ,assign)int picIDD;
+@property (nonatomic ,copy)NSString *weatherStrD;
+@property (nonatomic ,copy)NSString *windStrD;
+@property (nonatomic ,copy)NSString *tempD;
+
+@property (nonatomic ,assign)int picIDN;
+@property (nonatomic ,copy)NSString *weatherStrN;
+@property (nonatomic ,copy)NSString *windStrN;
+@property (nonatomic ,copy)NSString *tempN;
+
+
 @end

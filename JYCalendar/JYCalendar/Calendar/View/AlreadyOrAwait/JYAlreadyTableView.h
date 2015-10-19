@@ -10,4 +10,11 @@
 
 @interface JYAlreadyTableView : UITableView<UITableViewDataSource,UITableViewDelegate>
 
+- (instancetype)initWithFrame:(CGRect)frame
+                        style:(UITableViewStyle)style
+                andAlreadyArr:(NSArray *)alreadyArr;
+
+
+@property (nonatomic ,strong)NSArray *alreadyArr;
+
 @end

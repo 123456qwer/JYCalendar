@@ -10,4 +10,8 @@
 #define JYCalendar_JYURL_h
 
 
+//http://8.su.bdimg.com/icon/weather/aladdin/jpg/a7.jpg
+#define kWeatherPicURL http://8.su.bdimg.com/icon/weather/aladdin/jpg/
+
+
 #endif

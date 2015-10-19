@@ -30,15 +30,19 @@
     
     int            _changeYear;    //变化的年
     int            _changeMonth;   //变化的月
+    
+    
+    NSMutableString *_strForIsHoliday;
 }
 
 #pragma mark 初始化
-
 //初始化方法
 - (instancetype)initWithFrame:(CGRect)frame
 {
    
     if (self = [super initWithFrame:frame]) {
+        
+    
         
         //初始化数组
         _arrForLine = [NSMutableArray array];
@@ -47,6 +51,13 @@
         
         _lunarCalendar = [[LunarCalendar alloc] init];
     
+        NSArray *_arrayDay = [NSArray arrayWithObjects:@"初一", @"初二", @"初三", @"初四", @"初五", @"初六", @"初七", @"初八", @"初九", @"初十", @"十一", @"十二", @"十三", @"十四", @"十五", @"十六", @"十七", @"十八", @"十九", @"二十", @"廿一", @"廿二", @"廿三", @"廿四", @"廿五", @"廿六", @"廿七", @"廿八", @"廿九", @"三十", @"三一", nil];
+        _strForIsHoliday = [NSMutableString string];
+        for (int i = 0; i < _arrayDay.count; i++) {
+            
+           [_strForIsHoliday appendString:_arrayDay[i]];
+            
+        }
         
         //当天年月
         int month = [[Tool actionForNowMonth:[NSDate date]] intValue];
@@ -65,8 +76,10 @@
     return self;
 }
 
-#pragma mark 创建视图
 
+
+
+#pragma mark 创建视图
 //横竖线
 - (void)createLine:(NSDate *)date
           andMonth:(int )month
@@ -90,7 +103,7 @@
     
 
     
-    NSInteger weekNow  = [Tool actionForNowDay:date];
+    NSInteger weekNow  = [Tool actionForNowWeek:date];
     
     
     int lineNumber = 0;
@@ -118,7 +131,6 @@
     }
     
 }
-
 
 //创建日期label
 - (void)createCalendarLabelWithMonth:(int)month
@@ -184,7 +196,7 @@
  
     NSDate *date = [Tool actionForReturnSelectedDateWithDay:1 Year:yearNow month:monthNow];
 
-    NSInteger weekNow  = [Tool actionForNowDay:date];
+    NSInteger weekNow  = [Tool actionForNowWeek:date];
     _grayWeekNow = weekNow;
     //周日 = 1 周一 = 2 ...周六 = 7
     
@@ -258,7 +270,7 @@
             //***************判断周几***********************************//
          
             NSDate *date = [Tool actionForReturnSelectedDateWithDay:i - weekNow + 1 Year:yearNow month:monthNow];
-            NSInteger weekRedColor  = [Tool actionForNowDay:date];
+            NSInteger weekRedColor  = [Tool actionForNowWeek:date];
             
             [self actionForTextColorWithLabel:labelForCalendar weekDay:weekRedColor];
             
@@ -285,7 +297,7 @@
             //***************判断周几***********************************//
             
             NSDate *date = [Tool actionForReturnSelectedDateWithDay:i - weekNow + 1 Year:yearNow month:monthNow];
-            NSInteger weekRedColor  = [Tool actionForNowDay:date];
+            NSInteger weekRedColor  = [Tool actionForNowWeek:date];
             
             [self actionForTextColorWithLabel:labelForCalendar weekDay:weekRedColor];
 
@@ -319,7 +331,7 @@
             
             //判断周几
             NSDate *date = [Tool actionForReturnSelectedDateWithDay:i - weekNow + 1 Year:yearNow month:monthNow];
-            NSInteger weekRedColor  = [Tool actionForNowDay:date];
+            NSInteger weekRedColor  = [Tool actionForNowWeek:date];
             
             [self actionForTextColorWithLabel:labelForCalendar weekDay:weekRedColor];
 
@@ -424,7 +436,19 @@
     NSString *holiday = [_lunarCalendar getWeekHoliday:year month:month day:day];
     
     //世界节日 4
-    NSString *worldHoliday = [_lunarCalendar getWorldHoliday:month day:day];
+    NSString *jiequBefore = [_lunarCalendar getWorldHoliday:month day:day];
+    
+    NSArray *arrForWorld = [jiequBefore componentsSeparatedByString:@" "];
+    
+    NSString *worldHoliday = nil;
+    
+    if (arrForWorld.count > 0) {
+        
+        worldHoliday = arrForWorld[0];
+    }
+    
+   
+    
     
     NSMutableAttributedString *attStrForNow = nil;
     
@@ -482,7 +506,6 @@
 }
 
 #pragma mark 点击日历方法
-
 //点击日历方法
 - (void)actionForClickCalendar:(UIButton *)sender
 {
@@ -495,9 +518,7 @@
     }
     
     NSInteger nowTag = kTagForCalendarLabel + sender.tag - kTagForCalendarBtn;
-    
-  
-    
+ 
     UILabel *label = (UILabel *)[self viewWithTag:nowTag];
     UILabel *beforeLabel = (UILabel *)[self viewWithTag:_beforeTag];
     
@@ -510,20 +531,14 @@
     
     _beforeTag = nowTag;
     
-    NSLog(@"%@",label.text);
     
     //截取字符
     NSString *labelStr = label.text;
     NSArray *strarrayForH = [labelStr componentsSeparatedByString:@"\n"];
     
-    NSString *strForHoliday = @"";
     NSString *strForSolar = strarrayForH[0];
 
-    if (strarrayForH.count == 2) {
-        
-        strForHoliday = strarrayForH[1];
-        
-    }
+ 
     
     //根据tag判断时候是上个月或者下个月，不是本月
     //周日 = 1 周一 = 2 ...周六 = 7
@@ -541,17 +556,35 @@
     NSInteger isBefore = nowTag - kTagForCalendarLabel;
     NSInteger isNext   = nowTag - kTagForCalendarLabel - tagForGrayLabel + 1; //数组
     
+    BOOL isExist = NO;
+    NSString *strForHoliday = strarrayForH[1];
+    if ([_strForIsHoliday rangeOfString:strForHoliday].location == NSNotFound) {
+        
+        isExist = YES;
+        JYLog(@"这个字符串中有a");
+        
+    }
+
     
     //在一号之前，证明是前一个月
     if (isBefore < tagForGrayLabel) {
         
         //星期
-       NSString *strForWeek = [self actionForReturnSelectedWeek:[strForSolar intValue] month:_changeMonth - 1];
+        NSString *strForWeek = [self actionForReturnSelectedWeek:[strForSolar intValue] month:_changeMonth - 1];
         
         //阴历日
         [self actionForLunarDataWithDay:[strForSolar intValue] year:_changeYear month:_changeMonth - 1];
         NSString *lunarDay = [_lunarCalendar DayLunar];
         
+        if (isExist) {
+            
+            
+        }else{
+        
+            strForHoliday = [_lunarCalendar getWorldHoliday:_changeMonth - 1 day:[strForSolar intValue]];
+        }
+ 
+ 
         //传值  1代表前一个月
         _calendarBlock(strForSolar,lunarDay,strForHoliday,1 ,strForWeek);
         
@@ -563,6 +596,16 @@
         
         [self actionForLunarDataWithDay:[strForSolar intValue] year:_changeYear month:_changeMonth + 1];
         NSString *lunarDay = [_lunarCalendar DayLunar];
+        
+        
+        if (isExist) {
+            
+            
+        }else{
+            
+            strForHoliday = [_lunarCalendar getWorldHoliday:_changeMonth + 1 day:[strForSolar intValue]];
+        }
+        
         //传值  2代表下一个月
         _calendarBlock(strForSolar,lunarDay,strForHoliday,2 ,strForWeek);
         
@@ -573,18 +616,21 @@
         
         [self actionForLunarDataWithDay:[strForSolar intValue] year:_changeYear month:_changeMonth];
         NSString *lunarDay = [_lunarCalendar DayLunar];
+        
+        if (isExist) {
+            
+            
+        }else{
+            
+            strForHoliday = [_lunarCalendar getWorldHoliday:_changeMonth day:[strForSolar intValue]];
+        }
+        
         //传值  0代表这个月
-        _calendarBlock(strForSolar,lunarDay,strForHoliday,0 ,strForWeek);
+        _calendarBlock(strForSolar,lunarDay,strForHoliday,0,strForWeek);
 
     }
     
-   
-
-    
-   
-    
 }
-
 
 //选中当天的星期
 - (NSString *)actionForReturnSelectedWeek:(int )day
@@ -592,7 +638,7 @@
 {
 
     NSDate *date = [Tool actionForReturnSelectedDateWithDay:day Year:(integer_t)_changeYear month:(integer_t)month];
-    NSInteger week = [Tool actionForNowDay:date];
+    NSInteger week = [Tool actionForNowWeek:date];
     NSArray *arrForWeek = @[@"周日",@"周一",@"周二",@"周三",@"周四",@"周五",@"周六"];
     NSString *strForWeek = @"";
     if (week == 1) {
@@ -610,7 +656,6 @@
 
 }
 
-
 //阴历
 //**************************初始化阴历数据方法***********************//
 - (void)actionForLunarDataWithDay:(NSInteger )day
@@ -626,7 +671,6 @@
 
 
 #pragma mark 私有方法，判断
-
 //是否当天日期
 - (void)actionForBgColorWithTag:(NSInteger )tag
                           label:(UILabel *)beforeLabel
@@ -751,7 +795,6 @@
             nowStr = [NSString stringWithFormat:@"%@\n%@",strForDayLunar,strForPointDay];
             
         }
-        
         
     }else{
         

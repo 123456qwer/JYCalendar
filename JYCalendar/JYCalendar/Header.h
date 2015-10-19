@@ -20,4 +20,10 @@
 
 #import "LunarCalendar.h"
 
+#import "DataManager.h"
+
+#import "RemindModel.h"
+
+#import "UIImageView+WebCache.h"
+
 #endif

@@ -7,9 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		432621E51BD0900B00CB7A4D /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 432621E41BD0900B00CB7A4D /* libsqlite3.0.dylib */; };
+		432621E71BD0901200CB7A4D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 432621E61BD0901200CB7A4D /* libsqlite3.dylib */; };
+		432621EA1BD0A57100CB7A4D /* RemindModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 432621E91BD0A57100CB7A4D /* RemindModel.m */; };
+		432621ED1BD0AE0700CB7A4D /* JYRemindView+ArrAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 432621EC1BD0AE0700CB7A4D /* JYRemindView+ArrAction.m */; };
+		432621F01BD0E49700CB7A4D /* JYDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 432621EF1BD0E49700CB7A4D /* JYDatePicker.m */; };
 		4326E1DA1BCE2F6000EEDAD5 /* JYSetUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4326E1D91BCE2F6000EEDAD5 /* JYSetUpViewController.m */; };
 		4326E1DD1BCE2F7F00EEDAD5 /* JYSetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4326E1DC1BCE2F7F00EEDAD5 /* JYSetView.m */; };
 		4326E1E21BCE4E0100EEDAD5 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4326E1E11BCE4E0100EEDAD5 /* DataManager.m */; };
+		4340A3AC1BD4895D007A879E /* JYWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4340A3AB1BD4895D007A879E /* JYWeatherModel.m */; };
+		4340A3B21BD49513007A879E /* WeatherTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4340A3B11BD49513007A879E /* WeatherTool.m */; };
+		4340A3D51BD4A1A4007A879E /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4340A3B51BD4A1A4007A879E /* MKAnnotationView+WebCache.m */; };
+		4340A3D61BD4A1A4007A879E /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 4340A3B71BD4A1A4007A879E /* NSData+ImageContentType.m */; };
+		4340A3D71BD4A1A4007A879E /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4340A3B91BD4A1A4007A879E /* SDImageCache.m */; };
+		4340A3D81BD4A1A4007A879E /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 4340A3BB1BD4A1A4007A879E /* SDWebImageCompat.m */; };
+		4340A3D91BD4A1A4007A879E /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4340A3BD1BD4A1A4007A879E /* SDWebImageDecoder.m */; };
+		4340A3DA1BD4A1A4007A879E /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4340A3BF1BD4A1A4007A879E /* SDWebImageDownloader.m */; };
+		4340A3DB1BD4A1A4007A879E /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4340A3C11BD4A1A4007A879E /* SDWebImageDownloaderOperation.m */; };
+		4340A3DC1BD4A1A4007A879E /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4340A3C31BD4A1A4007A879E /* SDWebImageManager.m */; };
+		4340A3DD1BD4A1A4007A879E /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4340A3C61BD4A1A4007A879E /* SDWebImagePrefetcher.m */; };
+		4340A3DE1BD4A1A4007A879E /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4340A3C81BD4A1A4007A879E /* UIButton+WebCache.m */; };
+		4340A3DF1BD4A1A4007A879E /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 4340A3CA1BD4A1A4007A879E /* UIImage+GIF.m */; };
+		4340A3E01BD4A1A4007A879E /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 4340A3CC1BD4A1A4007A879E /* UIImage+MultiFormat.m */; };
+		4340A3E11BD4A1A4007A879E /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 4340A3CE1BD4A1A4007A879E /* UIImage+WebP.m */; };
+		4340A3E21BD4A1A4007A879E /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4340A3D01BD4A1A4007A879E /* UIImageView+HighlightedWebCache.m */; };
+		4340A3E31BD4A1A4007A879E /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4340A3D21BD4A1A4007A879E /* UIImageView+WebCache.m */; };
+		4340A3E41BD4A1A4007A879E /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4340A3D41BD4A1A4007A879E /* UIView+WebCacheOperation.m */; };
 		43414B561BCC944B00D343BB /* JYWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43414B551BCC944B00D343BB /* JYWeatherView.m */; };
 		43414B591BCCF78F00D343BB /* JYRightAndWrongView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43414B581BCCF78F00D343BB /* JYRightAndWrongView.m */; };
 		43414B5C1BCCFC9D00D343BB /* JYRemindView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43414B5B1BCCFC9D00D343BB /* JYRemindView.m */; };
@@ -19,12 +42,14 @@
 		4363441D1BCB4C3C00867E1B /* JYCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4363441C1BCB4C3C00867E1B /* JYCalendarView.m */; };
 		436344201BCB4D9500867E1B /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4363441F1BCB4D9500867E1B /* UIViewExt.m */; };
 		436344241BCB955800867E1B /* LunarCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 436344231BCB955800867E1B /* LunarCalendar.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		43A45BEB1BCF636900FA4B75 /* JYRemindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A45BEA1BCF636900FA4B75 /* JYRemindViewController.m */; };
+		43A45BEE1BCF63A200FA4B75 /* JYRemindListTb.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A45BED1BCF63A200FA4B75 /* JYRemindListTb.m */; };
+		43A45BF11BCF63F100FA4B75 /* JYRemindDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A45BF01BCF63F100FA4B75 /* JYRemindDetailsView.m */; };
 		43C8888D1BC8AFA600B6BD6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C8888C1BC8AFA600B6BD6B /* main.m */; };
 		43C888901BC8AFA600B6BD6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C8888F1BC8AFA600B6BD6B /* AppDelegate.m */; };
 		43C888981BC8AFA600B6BD6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43C888971BC8AFA600B6BD6B /* Images.xcassets */; };
 		43C8889B1BC8AFA600B6BD6B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43C888991BC8AFA600B6BD6B /* LaunchScreen.xib */; };
 		43C888A71BC8AFA600B6BD6B /* JYCalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C888A61BC8AFA600B6BD6B /* JYCalendarTests.m */; };
-		43C888BE1BC8E48D00B6BD6B /* JYRemindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C888BD1BC8E48D00B6BD6B /* JYRemindViewController.m */; };
 		43C888C61BC9032300B6BD6B /* Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C888C51BC9032300B6BD6B /* Tool.m */; };
 /* End PBXBuildFile section */
 
@@ -39,12 +64,58 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		432621E41BD0900B00CB7A4D /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		432621E61BD0901200CB7A4D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		432621E81BD0A57100CB7A4D /* RemindModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemindModel.h; sourceTree = "<group>"; };
+		432621E91BD0A57100CB7A4D /* RemindModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemindModel.m; sourceTree = "<group>"; };
+		432621EB1BD0AE0700CB7A4D /* JYRemindView+ArrAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JYRemindView+ArrAction.h"; sourceTree = "<group>"; };
+		432621EC1BD0AE0700CB7A4D /* JYRemindView+ArrAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JYRemindView+ArrAction.m"; sourceTree = "<group>"; };
+		432621EE1BD0E49700CB7A4D /* JYDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYDatePicker.h; sourceTree = "<group>"; };
+		432621EF1BD0E49700CB7A4D /* JYDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYDatePicker.m; sourceTree = "<group>"; };
 		4326E1D81BCE2F6000EEDAD5 /* JYSetUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYSetUpViewController.h; sourceTree = "<group>"; };
 		4326E1D91BCE2F6000EEDAD5 /* JYSetUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYSetUpViewController.m; sourceTree = "<group>"; };
 		4326E1DB1BCE2F7F00EEDAD5 /* JYSetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYSetView.h; sourceTree = "<group>"; };
 		4326E1DC1BCE2F7F00EEDAD5 /* JYSetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYSetView.m; sourceTree = "<group>"; };
 		4326E1E01BCE4E0100EEDAD5 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		4326E1E11BCE4E0100EEDAD5 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		4340A3AA1BD4895D007A879E /* JYWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYWeatherModel.h; sourceTree = "<group>"; };
+		4340A3AB1BD4895D007A879E /* JYWeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYWeatherModel.m; sourceTree = "<group>"; };
+		4340A3B01BD49513007A879E /* WeatherTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherTool.h; sourceTree = "<group>"; };
+		4340A3B11BD49513007A879E /* WeatherTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherTool.m; sourceTree = "<group>"; };
+		4340A3B41BD4A1A4007A879E /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
+		4340A3B51BD4A1A4007A879E /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
+		4340A3B61BD4A1A4007A879E /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		4340A3B71BD4A1A4007A879E /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		4340A3B81BD4A1A4007A879E /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		4340A3B91BD4A1A4007A879E /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		4340A3BA1BD4A1A4007A879E /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		4340A3BB1BD4A1A4007A879E /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCompat.m; sourceTree = "<group>"; };
+		4340A3BC1BD4A1A4007A879E /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		4340A3BD1BD4A1A4007A879E /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		4340A3BE1BD4A1A4007A879E /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		4340A3BF1BD4A1A4007A879E /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		4340A3C01BD4A1A4007A879E /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		4340A3C11BD4A1A4007A879E /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		4340A3C21BD4A1A4007A879E /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		4340A3C31BD4A1A4007A879E /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		4340A3C41BD4A1A4007A879E /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageOperation.h; sourceTree = "<group>"; };
+		4340A3C51BD4A1A4007A879E /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		4340A3C61BD4A1A4007A879E /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		4340A3C71BD4A1A4007A879E /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		4340A3C81BD4A1A4007A879E /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		4340A3C91BD4A1A4007A879E /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		4340A3CA1BD4A1A4007A879E /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		4340A3CB1BD4A1A4007A879E /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		4340A3CC1BD4A1A4007A879E /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		4340A3CD1BD4A1A4007A879E /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		4340A3CE1BD4A1A4007A879E /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
+		4340A3CF1BD4A1A4007A879E /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		4340A3D01BD4A1A4007A879E /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		4340A3D11BD4A1A4007A879E /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		4340A3D21BD4A1A4007A879E /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		4340A3D31BD4A1A4007A879E /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		4340A3D41BD4A1A4007A879E /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		4340A3E51BD4A289007A879E /* JYURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYURL.h; sourceTree = "<group>"; };
 		43414B541BCC944B00D343BB /* JYWeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYWeatherView.h; sourceTree = "<group>"; };
 		43414B551BCC944B00D343BB /* JYWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYWeatherView.m; sourceTree = "<group>"; };
 		43414B571BCCF78F00D343BB /* JYRightAndWrongView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYRightAndWrongView.h; sourceTree = "<group>"; };
@@ -64,6 +135,12 @@
 		436344211BCB4FD700867E1B /* Tags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tags.h; sourceTree = "<group>"; };
 		436344221BCB955800867E1B /* LunarCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LunarCalendar.h; sourceTree = "<group>"; };
 		436344231BCB955800867E1B /* LunarCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LunarCalendar.m; sourceTree = "<group>"; };
+		43A45BE91BCF636900FA4B75 /* JYRemindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYRemindViewController.h; sourceTree = "<group>"; };
+		43A45BEA1BCF636900FA4B75 /* JYRemindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYRemindViewController.m; sourceTree = "<group>"; };
+		43A45BEC1BCF63A200FA4B75 /* JYRemindListTb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYRemindListTb.h; sourceTree = "<group>"; };
+		43A45BED1BCF63A200FA4B75 /* JYRemindListTb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYRemindListTb.m; sourceTree = "<group>"; };
+		43A45BEF1BCF63F100FA4B75 /* JYRemindDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYRemindDetailsView.h; sourceTree = "<group>"; };
+		43A45BF01BCF63F100FA4B75 /* JYRemindDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYRemindDetailsView.m; sourceTree = "<group>"; };
 		43C888871BC8AFA600B6BD6B /* JYCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C8888B1BC8AFA600B6BD6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43C8888C1BC8AFA600B6BD6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -75,8 +152,6 @@
 		43C888A51BC8AFA600B6BD6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43C888A61BC8AFA600B6BD6B /* JYCalendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYCalendarTests.m; sourceTree = "<group>"; };
 		43C888B01BC8B22800B6BD6B /* JYCalendarPCH.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYCalendarPCH.pch; sourceTree = "<group>"; };
-		43C888BC1BC8E48D00B6BD6B /* JYRemindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYRemindViewController.h; sourceTree = "<group>"; };
-		43C888BD1BC8E48D00B6BD6B /* JYRemindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYRemindViewController.m; sourceTree = "<group>"; };
 		43C888C41BC9032300B6BD6B /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tool.h; sourceTree = "<group>"; };
 		43C888C51BC9032300B6BD6B /* Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tool.m; sourceTree = "<group>"; };
 		43C888C71BC9039B00B6BD6B /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -89,6 +164,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				432621E71BD0901200CB7A4D /* libsqlite3.dylib in Frameworks */,
+				432621E51BD0900B00CB7A4D /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +214,46 @@
 			path = SQLite/SQLite;
 			sourceTree = "<group>";
 		};
+		4340A3B31BD4A1A4007A879E /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				4340A3B41BD4A1A4007A879E /* MKAnnotationView+WebCache.h */,
+				4340A3B51BD4A1A4007A879E /* MKAnnotationView+WebCache.m */,
+				4340A3B61BD4A1A4007A879E /* NSData+ImageContentType.h */,
+				4340A3B71BD4A1A4007A879E /* NSData+ImageContentType.m */,
+				4340A3B81BD4A1A4007A879E /* SDImageCache.h */,
+				4340A3B91BD4A1A4007A879E /* SDImageCache.m */,
+				4340A3BA1BD4A1A4007A879E /* SDWebImageCompat.h */,
+				4340A3BB1BD4A1A4007A879E /* SDWebImageCompat.m */,
+				4340A3BC1BD4A1A4007A879E /* SDWebImageDecoder.h */,
+				4340A3BD1BD4A1A4007A879E /* SDWebImageDecoder.m */,
+				4340A3BE1BD4A1A4007A879E /* SDWebImageDownloader.h */,
+				4340A3BF1BD4A1A4007A879E /* SDWebImageDownloader.m */,
+				4340A3C01BD4A1A4007A879E /* SDWebImageDownloaderOperation.h */,
+				4340A3C11BD4A1A4007A879E /* SDWebImageDownloaderOperation.m */,
+				4340A3C21BD4A1A4007A879E /* SDWebImageManager.h */,
+				4340A3C31BD4A1A4007A879E /* SDWebImageManager.m */,
+				4340A3C41BD4A1A4007A879E /* SDWebImageOperation.h */,
+				4340A3C51BD4A1A4007A879E /* SDWebImagePrefetcher.h */,
+				4340A3C61BD4A1A4007A879E /* SDWebImagePrefetcher.m */,
+				4340A3C71BD4A1A4007A879E /* UIButton+WebCache.h */,
+				4340A3C81BD4A1A4007A879E /* UIButton+WebCache.m */,
+				4340A3C91BD4A1A4007A879E /* UIImage+GIF.h */,
+				4340A3CA1BD4A1A4007A879E /* UIImage+GIF.m */,
+				4340A3CB1BD4A1A4007A879E /* UIImage+MultiFormat.h */,
+				4340A3CC1BD4A1A4007A879E /* UIImage+MultiFormat.m */,
+				4340A3CD1BD4A1A4007A879E /* UIImage+WebP.h */,
+				4340A3CE1BD4A1A4007A879E /* UIImage+WebP.m */,
+				4340A3CF1BD4A1A4007A879E /* UIImageView+HighlightedWebCache.h */,
+				4340A3D01BD4A1A4007A879E /* UIImageView+HighlightedWebCache.m */,
+				4340A3D11BD4A1A4007A879E /* UIImageView+WebCache.h */,
+				4340A3D21BD4A1A4007A879E /* UIImageView+WebCache.m */,
+				4340A3D31BD4A1A4007A879E /* UIView+WebCacheOperation.h */,
+				4340A3D41BD4A1A4007A879E /* UIView+WebCacheOperation.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
 		43414B5D1BCD06FF00D343BB /* AlreadyOrAwait */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +277,8 @@
 		436344191BCB4A6800867E1B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4340A3AA1BD4895D007A879E /* JYWeatherModel.h */,
+				4340A3AB1BD4895D007A879E /* JYWeatherModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,6 +295,39 @@
 				43414B581BCCF78F00D343BB /* JYRightAndWrongView.m */,
 				43414B5A1BCCFC9D00D343BB /* JYRemindView.h */,
 				43414B5B1BCCFC9D00D343BB /* JYRemindView.m */,
+				432621EB1BD0AE0700CB7A4D /* JYRemindView+ArrAction.h */,
+				432621EC1BD0AE0700CB7A4D /* JYRemindView+ArrAction.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43A45BE61BCF633A00FA4B75 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				43A45BE91BCF636900FA4B75 /* JYRemindViewController.h */,
+				43A45BEA1BCF636900FA4B75 /* JYRemindViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		43A45BE71BCF634700FA4B75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				432621E81BD0A57100CB7A4D /* RemindModel.h */,
+				432621E91BD0A57100CB7A4D /* RemindModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43A45BE81BCF635100FA4B75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				432621EE1BD0E49700CB7A4D /* JYDatePicker.h */,
+				432621EF1BD0E49700CB7A4D /* JYDatePicker.m */,
+				43A45BEC1BCF63A200FA4B75 /* JYRemindListTb.h */,
+				43A45BED1BCF63A200FA4B75 /* JYRemindListTb.m */,
+				43A45BEF1BCF63F100FA4B75 /* JYRemindDetailsView.h */,
+				43A45BF01BCF63F100FA4B75 /* JYRemindDetailsView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +335,8 @@
 		43C8887E1BC8AFA600B6BD6B = {
 			isa = PBXGroup;
 			children = (
+				432621E61BD0901200CB7A4D /* libsqlite3.dylib */,
+				432621E41BD0900B00CB7A4D /* libsqlite3.0.dylib */,
 				43C888891BC8AFA600B6BD6B /* JYCalendar */,
 				43C888A31BC8AFA600B6BD6B /* JYCalendarTests */,
 				43C888881BC8AFA600B6BD6B /* Products */,
@@ -225,6 +379,7 @@
 				43C888C81BC9068D00B6BD6B /* WidthOrHeight.h */,
 				43C888C91BC906C200B6BD6B /* Logs.h */,
 				436344211BCB4FD700867E1B /* Tags.h */,
+				4340A3E51BD4A289007A879E /* JYURL.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -259,8 +414,9 @@
 		43C888BB1BC8E47300B6BD6B /* Remind */ = {
 			isa = PBXGroup;
 			children = (
-				43C888BC1BC8E48D00B6BD6B /* JYRemindViewController.h */,
-				43C888BD1BC8E48D00B6BD6B /* JYRemindViewController.m */,
+				43A45BE81BCF635100FA4B75 /* View */,
+				43A45BE71BCF634700FA4B75 /* Model */,
+				43A45BE61BCF633A00FA4B75 /* Controller */,
 			);
 			path = Remind;
 			sourceTree = "<group>";
@@ -278,12 +434,15 @@
 		43C888C31BC9030B00B6BD6B /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				4340A3B31BD4A1A4007A879E /* SDWebImage */,
 				436344221BCB955800867E1B /* LunarCalendar.h */,
 				436344231BCB955800867E1B /* LunarCalendar.m */,
 				4363441E1BCB4D9500867E1B /* UIViewExt.h */,
 				4363441F1BCB4D9500867E1B /* UIViewExt.m */,
 				43C888C41BC9032300B6BD6B /* Tool.h */,
 				43C888C51BC9032300B6BD6B /* Tool.m */,
+				4340A3B01BD49513007A879E /* WeatherTool.h */,
+				4340A3B11BD49513007A879E /* WeatherTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -387,22 +546,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4340A3D91BD4A1A4007A879E /* SDWebImageDecoder.m in Sources */,
+				4340A3E41BD4A1A4007A879E /* UIView+WebCacheOperation.m in Sources */,
 				4326E1DD1BCE2F7F00EEDAD5 /* JYSetView.m in Sources */,
+				4340A3DC1BD4A1A4007A879E /* SDWebImageManager.m in Sources */,
 				436344241BCB955800867E1B /* LunarCalendar.m in Sources */,
 				436344201BCB4D9500867E1B /* UIViewExt.m in Sources */,
+				43A45BEE1BCF63A200FA4B75 /* JYRemindListTb.m in Sources */,
+				4340A3D81BD4A1A4007A879E /* SDWebImageCompat.m in Sources */,
+				4340A3DB1BD4A1A4007A879E /* SDWebImageDownloaderOperation.m in Sources */,
 				43414B591BCCF78F00D343BB /* JYRightAndWrongView.m in Sources */,
+				43A45BEB1BCF636900FA4B75 /* JYRemindViewController.m in Sources */,
+				4340A3E31BD4A1A4007A879E /* UIImageView+WebCache.m in Sources */,
+				432621F01BD0E49700CB7A4D /* JYDatePicker.m in Sources */,
+				4340A3AC1BD4895D007A879E /* JYWeatherModel.m in Sources */,
 				436344181BCB4A3F00867E1B /* JYMainViewController.m in Sources */,
-				43C888BE1BC8E48D00B6BD6B /* JYRemindViewController.m in Sources */,
+				4340A3E21BD4A1A4007A879E /* UIImageView+HighlightedWebCache.m in Sources */,
 				43414B601BCD072000D343BB /* JYAlreadyTableView.m in Sources */,
 				43414B5C1BCCFC9D00D343BB /* JYRemindView.m in Sources */,
 				4363441D1BCB4C3C00867E1B /* JYCalendarView.m in Sources */,
+				4340A3DF1BD4A1A4007A879E /* UIImage+GIF.m in Sources */,
+				4340A3E01BD4A1A4007A879E /* UIImage+MultiFormat.m in Sources */,
 				43C888C61BC9032300B6BD6B /* Tool.m in Sources */,
+				4340A3E11BD4A1A4007A879E /* UIImage+WebP.m in Sources */,
+				4340A3DD1BD4A1A4007A879E /* SDWebImagePrefetcher.m in Sources */,
 				4326E1DA1BCE2F6000EEDAD5 /* JYSetUpViewController.m in Sources */,
 				43C888901BC8AFA600B6BD6B /* AppDelegate.m in Sources */,
+				432621EA1BD0A57100CB7A4D /* RemindModel.m in Sources */,
+				432621ED1BD0AE0700CB7A4D /* JYRemindView+ArrAction.m in Sources */,
+				4340A3D51BD4A1A4007A879E /* MKAnnotationView+WebCache.m in Sources */,
 				43414B631BCD073800D343BB /* JYAwaitTableView.m in Sources */,
+				4340A3DA1BD4A1A4007A879E /* SDWebImageDownloader.m in Sources */,
+				4340A3DE1BD4A1A4007A879E /* UIButton+WebCache.m in Sources */,
 				4326E1E21BCE4E0100EEDAD5 /* DataManager.m in Sources */,
+				4340A3D61BD4A1A4007A879E /* NSData+ImageContentType.m in Sources */,
 				43414B561BCC944B00D343BB /* JYWeatherView.m in Sources */,
 				43C8888D1BC8AFA600B6BD6B /* main.m in Sources */,
+				4340A3D71BD4A1A4007A879E /* SDImageCache.m in Sources */,
+				4340A3B21BD49513007A879E /* WeatherTool.m in Sources */,
+				43A45BF11BCF63F100FA4B75 /* JYRemindDetailsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

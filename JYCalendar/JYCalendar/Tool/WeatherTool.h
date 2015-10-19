@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^ArrForModel)(NSArray *arr);
+
 @interface WeatherTool : NSObject
+
++ (WeatherTool *)shareWeatherTool;
+
+- (void)request: (NSString*)httpUrl
+         withHttpArg: (NSString*)HttpArg;
+@property (nonatomic ,copy)ArrForModel arrForPassModel;
+
 
 @end

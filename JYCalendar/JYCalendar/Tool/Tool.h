@@ -18,40 +18,41 @@
 + (NSString *)actionForNowDate;
 
 /**
- *  根据日期计算周几
- *
- *  @param inputDate 日期
- *
- *  @return 周
+ *  返回当前的小时
  */
-+ (NSInteger)actionForNowDay:(NSDate *)inputDate;
++ (NSString *)actionforNowHour;
 
 /**
- *  算当前月份
- *
- *  @param date 当前日期
- *
- *  @return 月
+ *  返回当前分钟
  */
-+ (NSString *)actionForNowMonth:(NSDate *)date;
-
++ (NSString *)actionforNowMinute;
 
 /**
- *  当前年份
+ *  返回当天日期
  *
  *  @param date
  *
- *  @return 
+ *  @return 如13号
+ */
++ (NSString *)actionForNowSingleDay:(NSDate *)date;
+
+/**
+ *  算当前月份
+ */
++ (NSString *)actionForNowMonth:(NSDate *)date;
+
+/**
+ *  当前年份
  */
 + (NSString *)actionForNowYear:(NSDate *)date;
 
+/**
+ *  根据日期计算周几
+ */
++ (NSInteger)actionForNowWeek:(NSDate *)inputDate;
 
 /**
  *  当月天数
- *
- *  @param month 月份
- *
- *  @return 返回天数
  */
 + (NSInteger )actionForNowManyDay:(NSInteger )monthNow year:(NSInteger )yearNow ;
 
@@ -70,14 +71,18 @@
                                          month:(NSInteger )month;
 
 /**
- *  返回当天日期
- *
- *  @param date
- *
- *  @return 如13号
+ *  返回精确的时间
  */
-+ (NSString *)actionForNowSingleDay:(NSDate *)date;
++ (NSDate *)actionForReturnSelectedDateWithDay:(NSInteger)day
+                                          Year:(NSInteger)year
+                                         month:(NSInteger)month
+                                          hour:(NSInteger)hour
+                                        minute:(NSInteger)minute;
 
+/**
+ *  返回俩个数组，0为未完成，1为完成的数组
+ */
++ (NSArray *)actionForReturnAlreadyAndAwaitArray;
 
 
 @end

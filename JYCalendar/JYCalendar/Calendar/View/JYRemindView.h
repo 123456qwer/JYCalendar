@@ -27,4 +27,5 @@ typedef void(^addAction)();
 @property (nonatomic ,copy)editAction editAction;
 @property (nonatomic ,copy)addAction addAction;
 
+
 @end

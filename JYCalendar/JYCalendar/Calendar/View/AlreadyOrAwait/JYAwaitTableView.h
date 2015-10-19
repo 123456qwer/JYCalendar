@@ -10,5 +10,11 @@
 
 @interface JYAwaitTableView : UITableView<UITableViewDataSource,UITableViewDelegate>
 
+- (instancetype)initWithFrame:(CGRect)frame
+                        style:(UITableViewStyle)style
+                   andWaitArr:(NSArray *)arrForWait;
+
+@property (nonatomic ,strong)NSArray *arrForWait;
+
 
 @end

@@ -7,11 +7,15 @@
 //
 
 #import "JYRemindView.h"
+#import "JYRemindView+ArrAction.h"
 
 @implementation JYRemindView
 {
    
     NSInteger _senderTag;
+    NSArray   *_arrForAll;
+    NSArray   *_arrForAlready;
+    NSArray   *_arrForAwait;
 
 }
 
@@ -21,6 +25,10 @@
    
     if (self = [super initWithFrame:frame]) {
   
+        
+        //插入数据        
+        NSArray *arr = [self actionForReturnAlreadyAndAwaitArray];
+        
         
         _btnForEdit = [UIButton buttonWithType:UIButtonTypeCustom];
         _btnForEdit.frame = CGRectMake(5, 5, 60, 30);
@@ -53,13 +61,21 @@
         [self addSubview:_btnForAlready];
         
         
-        _alreayTableView = [[JYAlreadyTableView alloc] initWithFrame:CGRectMake(0, _btnForAwait.bottom + 1, kScreenWidth, 200 - 40) style:UITableViewStylePlain];
+        _alreayTableView = [[JYAlreadyTableView alloc] initWithFrame:CGRectMake(0, _btnForAwait.bottom + 1, kScreenWidth, 200 - 100) style:UITableViewStylePlain andAlreadyArr:arr[1]];
         _alreayTableView.hidden = YES;
+        
+        UIView *viewForBg1 = [UIView new];
+        viewForBg1.backgroundColor = [UIColor clearColor];
+        [_alreayTableView setTableFooterView:viewForBg1];
         [self addSubview:_alreayTableView];
         
         
-        _awaitTableView = [[JYAwaitTableView alloc] initWithFrame:CGRectMake(0, _btnForAwait.bottom + 1, kScreenWidth, 200 - 40) style:UITableViewStylePlain];
+        _awaitTableView = [[JYAwaitTableView alloc] initWithFrame:CGRectMake(0, _btnForAwait.bottom + 1, kScreenWidth, 200 - 100) style:UITableViewStylePlain andWaitArr:arr[0]];
         _awaitTableView.hidden = NO;
+        
+        UIView *viewForBg2 = [UIView new];
+        viewForBg2.backgroundColor = [UIColor clearColor];
+        [_awaitTableView setTableFooterView:viewForBg2];
         [self addSubview:_awaitTableView];
     
         

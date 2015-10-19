@@ -10,6 +10,7 @@
 #import "JYMainViewController.h"
 #import "JYRemindViewController.h"
 #import "JYSetUpViewController.h"
+#import "JYRemindView+ArrAction.h"
 
 //view
 #import "JYCalendarView.h"
@@ -68,7 +69,7 @@
     UIBarButtonItem *btnLeftItem = [[UIBarButtonItem alloc] initWithTitle:@"设置" style:UIBarButtonItemStylePlain target:self action:@selector(setAction)];
     self.navigationItem.leftBarButtonItem = btnLeftItem;
     
-    [Tool actionForNowDay:nil];
+    [Tool actionForNowWeek:nil];
     
     //星期
     [self createWeekView];
@@ -230,19 +231,28 @@
     _jyCalendarView = [[JYCalendarView alloc] initWithFrame:CGRectMake(0, _weekView.bottom + 0.5, kScreenWidth, 6 * kHeightForCalendar)];
     [self.view addSubview:_jyCalendarView];
     
-    
+ 
+
     //传值
     [_jyCalendarView setCalendarBlock:^void(NSString *solarDay , NSString *lunarDay, NSString *holiday ,int tagGray ,NSString *weekDay){
-    
-        __block JYWeatherView *weatherView = _jyWeatherView;
+   
+        
+        __block JYWeatherView *weatherView =  _jyWeatherView;
         __block int changeYear = _changeYear;
         __block int changeMonth = _changeMonth;
         LunarCalendar *lunar = _lunarCalendar;
-        
-       
-        
-        
+
         int solarday = [solarDay intValue];
+        
+        int nowDay = [[Tool actionForNowSingleDay:nil] intValue];
+        
+        int selectedDay = solarday - nowDay;
+        
+        if (selectedDay < 7 && selectedDay >= 0 && weatherView.arrForWeather.count > 0) {
+            
+            [weatherView createWeatherView:weatherView.arrForWeather andDay:selectedDay];
+        }
+        
         
         if (tagGray == 1) {
             
@@ -332,7 +342,7 @@
     _jyWeatherView.lunarCalendar.text = [NSString stringWithFormat:@"%@%@",lunarMonth,lunarDay];
     
     
-    NSInteger weekDay = [Tool actionForNowDay:[NSDate date]];
+    NSInteger weekDay = [Tool actionForNowWeek:[NSDate date]];
     
     NSArray *arrForWeek = @[@"周日",@"周一",@"周二",@"周三",@"周四",@"周五",@"周六"];
     
@@ -415,8 +425,8 @@
             
               [UIView animateWithDuration:0.3 animations:^{
                   
-                  _jyRemindView.alreayTableView.height = 400;
-                  _jyRemindView.awaitTableView.height = 400;
+                  _jyRemindView.alreayTableView.height = 300;
+                  _jyRemindView.awaitTableView.height = 300;
                   
               }];
               
@@ -470,6 +480,16 @@
     
     [self hiddenAction:NO];
     
+    //从新加载数据
+    NSArray *arrForAll = [_jyRemindView actionForReturnAlreadyAndAwaitArray];
+    
+    _jyRemindView.alreayTableView.alreadyArr = arrForAll[1];
+    _jyRemindView.awaitTableView.arrForWait = arrForAll[0];
+    
+    
+    [_jyRemindView.alreayTableView reloadData];
+    [_jyRemindView.awaitTableView reloadData];
+    
 }
 
 
@@ -480,7 +500,7 @@
   
     
     NSDate *date = [Tool actionForReturnSelectedDateWithDay:1 Year:year month:month];
-    NSInteger weekNow  = [Tool actionForNowDay:date];
+    NSInteger weekNow  = [Tool actionForNowWeek:date];
     
     if (weekNow == 1 && month != 2) {
         
@@ -506,8 +526,8 @@
             _jyWeatherView.origin = CGPointMake(0, _jyCalendarView.bottom + 10);
             _jyRightAndWrongView.origin = CGPointMake(0, _jyWeatherView.bottom);
             _jyRemindView.frame  = CGRectMake(0, _jyRightAndWrongView.bottom, kScreenWidth, 200);
-            _jyRemindView.alreayTableView.height = 200;
-            _jyRemindView.awaitTableView.height = 200;
+            _jyRemindView.alreayTableView.height = 100;
+            _jyRemindView.awaitTableView.height = 100;
         }];
         
     }else{
@@ -517,8 +537,8 @@
             _jyWeatherView.origin = CGPointMake(0, _jyCalendarView.bottom + 10 - kHeightForCalendar);
             _jyRightAndWrongView.origin = CGPointMake(0, _jyWeatherView.bottom);
             _jyRemindView.frame  = CGRectMake(0, _jyRightAndWrongView.bottom, kScreenWidth, 200);
-            _jyRemindView.alreayTableView.height = 200;
-            _jyRemindView.awaitTableView.height = 200;
+            _jyRemindView.alreayTableView.height = 100;
+            _jyRemindView.awaitTableView.height = 100;
 
         }];
     

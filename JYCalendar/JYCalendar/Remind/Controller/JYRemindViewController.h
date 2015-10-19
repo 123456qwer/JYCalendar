@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+
+
 @interface JYRemindViewController : UIViewController
 
 //提醒页面
 + (instancetype)shareJYRemindVC;
+
 
 
 @end

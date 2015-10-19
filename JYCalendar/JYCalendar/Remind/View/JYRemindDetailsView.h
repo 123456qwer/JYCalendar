@@ -10,4 +10,6 @@
 
 @interface JYRemindDetailsView : UIView
 
+- (void)changeContent;
+
 @end

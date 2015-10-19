@@ -10,4 +10,13 @@
 
 @interface RemindModel : NSObject
 
+@property (nonatomic ,assign)int year;
+@property (nonatomic ,assign)int month;
+@property (nonatomic ,assign)int day;
+@property (nonatomic ,assign)int hour;
+@property (nonatomic ,assign)int minute;
+@property (nonatomic ,copy)NSString *title;
+@property (nonatomic ,copy)NSString *content;
+@property (nonatomic ,copy)NSString *timeorder;
+
 @end

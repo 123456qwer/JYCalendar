@@ -10,4 +10,6 @@
 
 @interface JYRemindView (ArrAction)
 
+- (NSArray *)actionForReturnAlreadyAndAwaitArray;
+
 @end

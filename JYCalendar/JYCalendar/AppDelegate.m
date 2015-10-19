@@ -8,14 +8,15 @@
 
 #import "AppDelegate.h"
 #import "JYMainViewController.h"
-
+#import "DataManager.h"
 
 @interface AppDelegate ()
 
 {
   
     JYMainViewController *_jyMainVC;
-
+    
+    
 }
 
 @end
@@ -34,6 +35,9 @@
     
     _window.rootViewController = nav;
     
+    
+    //初始化数据库
+    DataManager *dataManager = [DataManager shareDataManager];
 
     return YES;
 }

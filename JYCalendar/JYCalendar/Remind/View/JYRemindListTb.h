@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JYRemindListTb : UITableView
+@interface JYRemindListTb : UITableView<UITableViewDataSource,UITableViewDelegate>
+
+
 
 @end
